@@ -14,7 +14,7 @@ A simple, efficient tool to convert Jupyter notebooks (.ipynb) into standard Pyt
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/notebook-to-python.git
+git clone https://github.com/tahakhalilcharif/Jupyter-to-Python notebook-to-python
 cd notebook-to-python
 ```
 
@@ -26,13 +26,13 @@ No additional dependencies are required beyond the Python standard library.
 
 ```bash
 # Basic usage - outputs to {notebook_name}.py
-python notebook_to_script.py my_notebook.ipynb
+python jupyter_to_python.py my_notebook.ipynb
 
 # Custom output path
-python notebook_to_script.py my_notebook.ipynb -o converted_script.py
+python jupyter_to_python.py my_notebook.ipynb -o converted_script.py
 
 # Skip markdown cells
-python notebook_to_script.py my_notebook.ipynb --no-markdown
+python jupyter_to_python.py my_notebook.ipynb --no-markdown
 ```
 
 ### As a Module
@@ -40,7 +40,7 @@ python notebook_to_script.py my_notebook.ipynb --no-markdown
 You can also import and use the converter in your own Python scripts:
 
 ```python
-from notebook_to_script import convert_notebook_to_script
+from jupyter_to_python import convert_notebook_to_script
 
 # Convert with default settings
 convert_notebook_to_script('my_notebook.ipynb')
@@ -99,16 +99,6 @@ print('Hello, world!')
 - **Automation**: Use in CI/CD pipelines to convert notebooks to scripts
 - **Code Review**: Simplified view of code without notebook metadata
 - **Portability**: Run notebook code without requiring Jupyter
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## License
 
